@@ -2,9 +2,10 @@
         width: 100%;
     max-width: 1000px;
     margin: 8px auto 0 auto;
-    font-family: 'Manrope', 'Montserrat', sans-serif
+      font-family: 'Manrope', 'Montserrat', sans-serif
 }
 
+/* Хедэр */
 
 .header {
   
@@ -19,14 +20,10 @@
     margin-left: 20px;
 }
 
-.header__logo {
-    width: 72px;
-  
-}
 
-.header__menu {
-          font-family: 'Manrope';
-      font-style: normal;
+.header_menu {
+    font-family: 'Manrope';
+    font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 34px;
@@ -47,15 +44,17 @@ color: #023A62;
 
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-justify-content: center;
 
-padding: 0 20px;
+.content {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 0 20px 10px 20px;
  
    
 }
+
+/* Лид */
 
 .content_lid {
 display: flex;
@@ -63,9 +62,6 @@ flex-direction: column;
 align-items: center;
 justify-content: space-around;
 text-align: center;
-
-
-
 }
 
 .content_lid_suptitle {
@@ -74,12 +70,8 @@ text-align: center;
     font-size: 29px;
     line-height: 35px;
         letter-spacing: 0.03em;
-text-align: center;
 margin-top: 93px;
 margin-bottom: -85px;
-
-
-
 }
 
 .content_title {
@@ -89,17 +81,16 @@ margin-bottom: -85px;
     line-height: 134px;
         letter-spacing: 0.03em;
     color: #930505;
-    text-align: center;
-    margin-bottom: 0;
-  
-  
-     
+   
+    margin-bottom: 0;   
  
 }
+
+
 .content_lid_text {
-    width: 100%;
-    max-width: 622px;
-    font-family: 'Manrope';
+width: 100%;
+max-width: 622px;
+font-family: 'Manrope';
 font-weight: 400;
 font-size: 22px;
 line-height: 24px;
@@ -128,23 +119,23 @@ color: #930505;
 
 }
 
+/* Основной контент */
+
 .content_main {
-    padding-top: 49px;
-    
-  
+    margin-top: 65px;
+    margin-bottom: 93px;
+ 
 }
-.content__box {
-   
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 48px;
+   .content_pillow {
+  margin-bottom: -12px;
+margin-right: 760px;
+
+  
    }
 
    .content_h2 {
-    width: 212px;
-    margin-top: 48px;
-    margin-bottom: 20px;
-        font-family: 'Montserrat';
+    text-align: left;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 38px;
@@ -153,19 +144,29 @@ color: #930505;
    
    }
 
- 
-   .content__box_left {
-    width: 47%;
-    max-width: 500px;
-      display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+   .content_box {
+    display: flex;
+ justify-content: space-between;
+flex-wrap: wrap;
+
 }
 
-.content__box_right {
-   width: 47%;
-   max-width: 500px;
-   padding-left: 0px;
+ 
+   .content_box_left {
+    width: 50%;
+    max-width: 470px;
+      display: flex;
+      flex-direction: column;
+  
+    
+
+}
+
+.content_box_right {
+   width: 50%;
+   max-width: 470px;
+   display: flex;
+      padding-left: 20px;
 
 }
   
@@ -177,7 +178,6 @@ color: #930505;
     margin-top: 0;
 
    }
-
    
    .context_box_right_pic{
    display: block;
@@ -189,7 +189,7 @@ color: #930505;
    {
    display: flex;
     flex-direction: column;
-    margin-top: 19px;
+    margin-top: 18px;
      }
      
 .content_h3 {
@@ -207,7 +207,8 @@ margin-bottom: 0;
   margin-top: 5px;
   margin-bottom: 0;
   padding-bottom: 13px;
-width: 450px;
+width: 100%;
+max-width: 470px;
 font-family: 'Manrope';
 font-style: normal;
 font-weight: 400
@@ -217,14 +218,15 @@ letter-spacing: 0.02em;
 }
 
 .content_link {
-    margin-top: 47px;
 font-family: 'Manrope';
 font-style: normal;
 font-weight: 600;
 font-size: 18px;
 line-height: 25px;
 letter-spacing: 0.02em;
-color: #023A62
+color: #023A62;
+margin-top: 48px;
+
 }
 
 .content_link:hover {
@@ -241,28 +243,23 @@ color: #023A62
 
 }
 
-
+/* Футер */
 
 .footer {
- 
-   
-}
-
-.footer_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #000;
-            margin-top: 50px;
-            padding-top: 10px;
+    padding-top: 10px;
+   
 }
+
 
 .footer_box_left{
     display: flex;
    flex-direction: column;
    justify-content: space-between;
-margin-top: 0;  
-margin-left: 4px;
+   margin-left: 4px;
 
 
 }
@@ -314,3 +311,97 @@ margin-top: 31px;
      margin-top: 22px;
 
    }
+
+   /* Адаптивность */
+
+
+   /* Планшет */
+   @media (max-width: 820px) {
+
+    .content_lid_suptitle {
+        font-size: 24px;
+    }
+
+    .content_title {
+   font-size: 90px;  
+    }
+
+    .content_box_left {
+        width: 50%;
+        max-width: 320px;
+          }
+    
+    .content_box_right {
+       width: 50%;
+       max-width: 320px;
+           }
+
+.content_pillow{
+display: block;
+justify-content: space-around;
+
+}
+
+
+
+.content_box {
+    justify-content: center;
+  }
+
+   }
+
+
+
+
+
+
+/* Мобилка */
+
+   @media (max-width: 440px) 
+   {
+    
+    .header_logo {
+      display: none;
+          }
+
+          .content_lid_suptitle {
+                       font-size: 18px;
+          
+        }
+
+    .content_title {
+   font-size: 60px; 
+   margin-bottom: -20px; 
+    }
+
+    .content_lid_text {
+ 
+    font-size: 16px;
+    line-height: 20px;
+     
+    }
+
+    .content_lid_button {
+        margin-top: 31px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px 61px 10px 69px;
+               font-size: 25px;
+        line-height: 38px;
+     }
+
+               .content_box_left {
+            width: 100%;
+              }
+        
+        .content_box_right {
+           width: 100%;
+      
+               }
+
+               .footer_logo{
+                display: none;
+               }
+
+}
+  
