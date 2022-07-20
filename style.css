@@ -7,9 +7,7 @@
 
 /* Хедэр */
 
-.header {
-  
-    
+.header {   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,19 +95,19 @@ margin-bottom: 33px;
 
 }
 
-.content_lid_button {
+.button {
 display: inline-block;
 padding: 6px 79px 14px 91px;
-font-family: 'Manrope';
+font-family: inherit;
 font-weight: 700;
 font-size: 32px;
 line-height: 44px;
 color: #fff;
 background-color: #930505;
-
+text-decoration: none;
 }
 
-.content_lid_button:hover {
+.button:hover {
 background-color: #fff;
 border: 2px solid #930505;
 color: #930505;
@@ -190,20 +188,18 @@ margin: 0;
 }
 
 .content_price {
-    font-family: 'Manrope';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 700;
     font-size: 17px;
     line-height: 23px;
     letter-spacing: 0.02em;
- margin-bottom: 43px;
+    margin-bottom: 43px;
 
 }
 
 .content_link {
     display: flex;
-    font-family: 'Manrope';
-    font-style: normal;
+    font-family: inherit;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
